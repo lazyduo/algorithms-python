@@ -1,4 +1,4 @@
-def slsectionSort(arr):
+def selectionSort(arr):
     for i in range(len(arr)):
         
         min_idx = i
@@ -11,7 +11,7 @@ def slsectionSort(arr):
         # Swap
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
 
-def stableSlsectionSort(arr):
+def stableSelectionSort(arr):
     for i in range(len(arr)):
         
         min_idx = i
@@ -33,17 +33,17 @@ if __name__ == '__main__':
     arr = [2, 34, 56, 3, 1, 2, 45]
     print('arr : {}'.format(arr))
 
-    slsectionSort(arr)
+    selectionSort(arr)
     print(f'Slection Sorted Array is: {arr}')
 
     arr2 = [2, 34, 56, 3, 1, 2, 45]
     print('arr2 : {}'.format(arr2))
 
-    stableSlsectionSort(arr2)
+    stableSelectionSort(arr2)
     print(f'Stable Slection Sorted Array is: {arr2}')
 
 ## OUTPUT
 # arr : [2, 34, 56, 3, 1, 2, 45]
-# Slection Sorted Array is: [1, 2, 2, 3, 34, 45, 56]
+# Selection Sorted Array is: [1, 2, 2, 3, 34, 45, 56]
 # arr2 : [2, 34, 56, 3, 1, 2, 45]
-# Stable Slection Sorted Array is: [1, 2, 2, 3, 34, 45, 56]
+# Stable Selection Sorted Array is: [1, 2, 2, 3, 34, 45, 56]
